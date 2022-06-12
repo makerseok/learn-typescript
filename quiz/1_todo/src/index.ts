@@ -52,6 +52,17 @@ function log(): void {
   console.log(todoItems);
 }
 
+const item1 = {
+  id: 4,
+  title: '아이템 4',
+  done: false,
+};
+const item2 = {
+  id: 5,
+  title: '아이템 5',
+  done: true,
+};
+
 todoItems = fetchTodoItems();
-// addTwoTodoItems();
+addTwoTodoItems(item1, item2);
 log();
